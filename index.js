@@ -12,3 +12,6 @@ app.get('/', (req, res) => {
     console.log('access to / path');
     res.send("hello world !");
 });
+app.get("/about", (req, res) => {
+    res.send("about");
+});
