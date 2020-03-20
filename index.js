@@ -5,3 +5,6 @@ app.listen(3000, () => {
     console.log("SERVER STARTED...");
 });
 app.use(express.static('./public')); // fait appel à tous les fichiers dans le dossier 'public'.
+app.get('/get_text', (req, res) => {
+    res.send('hello world');
+})
